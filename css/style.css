@@ -1,0 +1,272 @@
+/* https://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+section{
+	width:100%;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	-o-column-count: 3;
+	column-count: 3;
+
+	-webkit-column-gap: 15px;
+	-moz-column-gap: 15px;
+	-o-column-gap: 15px;
+	column-gap: 15px;
+
+	-webkit-border-radius: 3;
+	-moz-border-radius: 3;
+	-o-border-radius: 3;
+	border-radius: 25px;
+
+	background: #00b7ea; /* Old browsers */
+	background: -moz-linear-gradient(top, #00b7ea 0%, #D2E4E8 100%);
+	background: -webkit-linear-gradient(#00b7ea 0%, #D2E4E8 100%);
+	background: -o-linear-gradient(#00b7ea 0%, #D2E4E8 100%);
+	background: linear-gradient(#00b7ea 0%, #D2E4E8 100%); 
+}
+
+html{
+    font-family:"Bodoni Moda", serif;
+    color:white;
+}
+
+body >a{
+    opacity:0;
+    position:absolute;
+    outline: 2px solid rgb(184, 85, 19);
+    outline-offset: 4px;
+}
+
+body >a:focus{
+    opacity:100;
+    position:absolute;
+    color:white;
+}
+
+nav{
+    background-color: #0f0b12;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    text-align: center;
+}
+
+#current{
+    text-transform: uppercase;
+}
+
+.banner{
+    background-color: #c6c6c6;
+    background-size: cover;
+    background-image: url(/image/kiperina-space.png);
+    width: 100%;
+    height: 300px;
+}
+
+main {
+    padding: 24px;
+    background-color: #251d2c;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 150%;
+    color:white;
+    margin: 2px 0px 2px 0px;
+}
+
+h2{
+    font-weight: 500;
+    border: solid white;
+    color:white;
+    border-width: 0px 0px 0px 4px;
+    background-color: rgb(37, 29, 44,0.2);
+    padding:8px;
+    margin:20px 0px 20px 0px;
+}
+
+.container60{
+    width: 60%;
+}
+
+.container30{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.portrait{
+    width:60%;
+    align-items: center;
+}
+
+.skillcard{
+    border-radius: 200px 200px 0px 0px;
+    border: 2px solid white;
+    padding:8px;
+}
+
+.nextto{
+    display: flex;
+    align-items: center;
+}
+
+.spread{
+    justify-content: space-evenly;
+}
+
+
+.icon{
+    width:40px;
+}
+
+main a{
+    background-color:rgb(184, 85, 19);
+    padding: 8px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 24px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+main a{
+    color:white;
+    text-decoration: none;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    color:white;
+    margin: 2px 0px 20px 0px;
+    font-family:kanit light;
+    font-size: 90%;
+    line-height: 120%;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    background-color: #0f0b12;
+    padding:12px;
+    align-items: center;
+}
+
+footer img{
+    width:100px;
+    margin-bottom: 24px;
+}
+
+footer a{
+    color:white;
+    padding: 8px;
+    font-size: 14px;
+}
+
+a:focus{
+    outline: 2px solid rgb(184, 85, 19);
+    outline-offset: 4px;
+}
+
+.skilltable{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 12px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skilltable > *:nth-child(n+4){
+    align-self:start;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width:350px;
+    opacity: 80%;
+}
+
+.gallery img:hover{
+    width:350px;
+    opacity: 100%;
+}
